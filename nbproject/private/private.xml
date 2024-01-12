@@ -3,11 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JavaFXLibrary/src/javafxlibrary/JavaFXLibrary.java</file>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JavaFXLibrary/src/books/newbook/NewbookController.java</file>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JavaFXLibrary/src/javafxlibrary/homeController.java</file>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JavaFXLibrary/src/javafxlibrary/home.fxml</file>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JavaFXLibrary/src/books/newbook/book.fxml</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JavaFXLibrary/src/javafxlibrary/JavaFXLibrary.java</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JavaFXLibrary/src/javafxlibrary/homeController.java</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JavaFXLibrary/src/entity/Book.java</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JavaFXLibrary/src/entity/User.java</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JavaFXLibrary/src/books/newbook/NewbookController.java</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JavaFXLibrary/src/books/newbook/book.fxml</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JavaFXLibrary/src/META-INF/persistence.xml</file>
         </group>
     </open-files>
 </project-private>

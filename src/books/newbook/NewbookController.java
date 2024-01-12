@@ -11,6 +11,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.FileChooser;
@@ -24,6 +25,7 @@ import javafx.stage.Stage;
 public class NewbookController implements Initializable {
     private File selectedFile;
     @FXML private TextField textField;
+    @FXML private Button btnSelectCover;
     /**
      * Initializes the controller class.
      */
@@ -35,9 +37,10 @@ public class NewbookController implements Initializable {
     @FXML
     public void selectedCover() {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Выбор изображения");
-        fileChooser.getExtensionFilters().add(new ExtensionFilter("Изображения","jpg", "png"));
+        fileChooser.setTitle("Выбор обложки для книги");
         selectedFile = fileChooser.showOpenDialog(new Stage());
+        btnSelectCover.setText("Выбран файл "+selectedFile.getName());
+        btnSelectCover.disableProperty().set(true);
     }
     
 }

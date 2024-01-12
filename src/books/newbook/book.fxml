@@ -56,7 +56,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="btnSelectCover" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="38.0" prefWidth="425.0" text="Выбрать обложку" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="btnSelectCover" contentDisplay="CENTER" mnemonicParsing="false" onAction="#selectedCover" prefHeight="38.0" prefWidth="425.0" text="Выбрать обложку" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
                </font>
