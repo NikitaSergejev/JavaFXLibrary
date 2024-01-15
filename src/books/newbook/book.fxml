@@ -34,7 +34,7 @@
          <children>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Button fx:id="btnAddBook" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" text="Добавить книгу">
+                  <Button fx:id="btnAddBook" mnemonicParsing="false" onAction="#addNewBook" prefHeight="36.0" prefWidth="130.0" text="Добавить книгу">
                      <HBox.margin>
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </HBox.margin>
