@@ -32,6 +32,11 @@ public class NewbookController implements Initializable {
     private File selectedFile;
     @FXML private TextField textFieldTitle;
     @FXML private Button btnSelectCover;
+
+    public NewbookController() {
+    }
+    
+    
     
     @FXML
     public void selectedCover() {
@@ -59,10 +64,6 @@ public class NewbookController implements Initializable {
         }catch(Exception e){
             e.printStackTrace();
         }
-        btnSelectCover.disableProperty().set(false);
-        selectedFile = null;
-        textFieldTitle.setText("");
-        btnSelectCover.setText("Выбрать обложку книги");
     }
     
      public EntityManager getEntityManager() {
