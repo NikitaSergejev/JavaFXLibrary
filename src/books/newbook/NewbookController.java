@@ -15,12 +15,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 
 /**
  * FXML Controller class
@@ -30,8 +27,7 @@ import javax.persistence.Persistence;
 public class NewbookController implements Initializable {
     private EntityManager em;
     private File selectedFile;
-    @FXML private TextField textFieldTitle;
-    @FXML private Button btnSelectCover;
+    @FXML private TextField tfTitle;
 
     public NewbookController() {
     }
@@ -41,19 +37,13 @@ public class NewbookController implements Initializable {
     @FXML
     public void selectedCover() {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Выбор изображения");
-        
+        fileChooser.setTitle("Выбор изображения");       
         selectedFile = fileChooser.showOpenDialog(new Stage());
-        /*FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Выбор обложки для книги");
-        selectedFile = fileChooser.showOpenDialog(new Stage());
-        btnSelectCover.setText("Выбран файл "+selectedFile.getName());
-        btnSelectCover.disableProperty().set(true);*/
     }
     @FXML
-    public void addNewBook(){
+    public void clickaddNewBook(){
         Book book = new Book();
-        book.setTitle(textFieldTitle.getText());
+        book.setTitle(tfTitle.getText());
         try(FileInputStream fis = new FileInputStream(selectedFile)){
             byte[] fileContent = new byte[(int)selectedFile.length()];
             fis.read(fileContent);

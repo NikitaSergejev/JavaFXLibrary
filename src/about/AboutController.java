@@ -7,17 +7,23 @@ package about;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
 
 /**
  *
  * @author pupil
  */
 public class AboutController implements Initializable {
-
+    @FXML
+    private BorderPane bpAboutRoot;
+    @FXML
+    private Label lbAboutText;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
     
 }

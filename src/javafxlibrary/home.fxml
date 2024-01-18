@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<VBox  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlibrary.homeController">
+<VBox fx:id="vbHomeRoot" prefHeight="533.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlibrary.HomeController">
    <children>
       <MenuBar>
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" text="Книги">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem fx:id="miAddNewBook" mnemonicParsing="false" onAction="#mbShowAddNewBook" text="Добавить новую книгу" />
+              <MenuItem fx:id="miListBooks" mnemonicParsing="false" onAction="#mbShowListBooks" text="Список книг" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
@@ -30,20 +28,13 @@
           </Menu>
         </menus>
       </MenuBar>
-      <AnchorPane prefHeight="190.0" prefWidth="600.0">
+      <VBox fx:id="vbContent" prefHeight="515.0" prefWidth="800.0">
          <children>
-            <Label layoutX="113.0" layoutY="14.0" prefHeight="47.0" prefWidth="350.0" text="Добро пожаловать в библиотеку группы JKTV22">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="113.0" layoutY="74.0" prefHeight="55.0" prefWidth="350.0" text="Библиотека предназначени для изучения JavaFX">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Button fx:id="newWindow" layoutX="256.0" layoutY="151.0" mnemonicParsing="false" onAction="#openWindowAddBook" text="Add book" />
+            <VBox layoutX="50.0" layoutY="55.0" />
          </children>
-      </AnchorPane>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
    </children>
 </VBox>
